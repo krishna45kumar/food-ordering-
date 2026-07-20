@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Order Food Online</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cart Sidebar -->
+
+<div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span id="closeCart">&times;</span>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total:
+            <span id="cartTotal">₹0</span>
+        </h3>
+
+        <button class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>FoodHub</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="veg.html">Veg</a></li>
+            <li><a href="nonveg.html">Non-Veg</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+
+            <div class="cart" id="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+
+            <button id="loginBtn" class="login-btn">
+                Login
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <h1>Discover the Best Food Near You</h1>
+
+            <p>
+                Order delicious meals from your favourite restaurants.
+            </p>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search for Pizza, Burger, Biryani..."
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <h2>Explore Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800"
+                    alt="Veg Food">
+
+                <div class="category-content">
+                    <h3>Veg Food</h3>
+                    <p>Healthy and delicious vegetarian meals.</p>
+
+                    <a href="veg.html">
+                        <button>Explore</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="category-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800"
+                    alt="Non Veg Food">
+
+                <div class="category-content">
+                    <h3>Non-Veg Food</h3>
+                    <p>Tasty chicken, mutton and seafood dishes.</p>
+
+                    <a href="nonveg.html">
+                        <button>Explore</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popular Foods -->
+
+    <section class="popular-foods">
+
+        <h2>Popular Dishes</h2>
+
+        <div class="food-container">
+
+            <!-- Card 1 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800"
+                    alt="Pizza">
+
+                <div class="food-info">
+
+                    <h3>Margherita Pizza</h3>
+
+                    <p>
+                        Fresh cheese pizza loaded with toppings.
+                    </p>
+
+                    <div class="price-cart">
+
+                        <span>₹199</span>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+                    alt="Burger">
+
+                <div class="food-info">
+
+                    <h3>Veg Burger</h3>
+
+                    <p>
+                        Crispy patty with fresh vegetables.
+                    </p>
+
+                    <div class="price-cart">
+
+                        <span>₹99</span>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=800"
+                    alt="Biryani">
+
+                <div class="food-info">
+
+                    <h3>Veg Biryani</h3>
+
+                    <p>
+                        Aromatic rice cooked with spices.
+                    </p>
+
+                    <div class="price-cart">
+
+                        <span>₹249</span>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800"
+                    alt="Pasta">
+
+                <div class="food-info">
+
+                    <h3>Creamy Pasta</h3>
+
+                    <p>
+                        Rich and creamy Italian pasta.
+                    </p>
+
+                    <div class="price-cart">
+
+                        <span>₹149</span>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>FoodHub</h3>
+
+        <p>
+            Delicious food delivered to your doorstep.
+        </p>
+
+        <p>
+            © 2026 FoodHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Login Modal -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="close" id="closeBtn">
+                &times;
+            </span>
+
+            <h2>User Login</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Username"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
