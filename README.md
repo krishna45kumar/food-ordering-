@@ -72,4 +72,3 @@ This project is developed as a **college frontend project** to demonstrate the u
 
 ---
 
-## 📂 Project Structure
